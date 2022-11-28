@@ -8,4 +8,7 @@ tg.MainButton.onClick(function(){
     });
 }); 
 tg.isClosingConfirmationEnabled = true;
-console.log(tg);
+
+document.getElementById('btn')?.addEventListener("click", () => {
+    tg.showAlert('Oops..');
+})
