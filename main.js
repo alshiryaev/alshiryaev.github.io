@@ -5,6 +5,7 @@ tg.MainButton.onClick(function(){
     tg.showPopup({
         title: 'Вот это да!',
         message: 'Вы нажали MainButton'
-    })
+    });
 }); 
+tg.isClosingConfirmationEnabled = true;
 console.log(tg);
