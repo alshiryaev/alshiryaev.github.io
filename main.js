@@ -1,6 +1,6 @@
 const tg = globalThis.Telegram.WebApp;
 tg.MainButton.isVisible = true;
-tg.MainButton.text = "Auth";
+tg.MainButton.text = "Авторизация";
 tg.MainButton.onClick(function(){
     tg.showPopup({
         title: 'Вот это да!',
