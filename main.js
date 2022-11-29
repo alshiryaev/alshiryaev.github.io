@@ -1,5 +1,6 @@
 const tg = globalThis.Telegram.WebApp;
-tg.MainButton.isVisible = true;
+let isMainBittonVisible = false;
+tg.ready();
 tg.MainButton.text = "Авторизация";
 tg.MainButton.onClick(function(){
     tg.showPopup({
@@ -7,8 +8,13 @@ tg.MainButton.onClick(function(){
         message: 'Вы нажали MainButton'
     });
 }); 
+tg.MainButton.isVisible = false;
 tg.isClosingConfirmationEnabled = true;
 
-document.getElementById('btn')?.addEventListener("click", () => {
+
+document.getElementById('alert')?.addEventListener("click", () => {
     tg.showAlert('Oops..');
-})
+});
+document.getElementById('show_mb')?.addEventListener("click", (event) => {
+    tg.MainButton.isVisible = !tg.MainButton.isVisible
+});

@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        .btn {
+            width: 100px;
+            height: 30px;
+        }
+    </style>
 </head>
 <body>
     <h1>Native components</h1>
@@ -46,7 +52,16 @@
     
     </fieldset>
     <div>
-        <button id="btn">Нажмите</button>
+        <button>Кнопка без стилей</button>
+    </div>
+    <div>
+        <button class="btn" id="alert">Show tg-alert</button>
+    </div>
+    <div>
+        <label>
+            Показать MainButton
+            <input id="show_mb" type="checkbox">
+        </label>
     </div>
     <script src="main.js"></script>
 </body>
