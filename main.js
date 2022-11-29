@@ -1,6 +1,6 @@
 const tg = globalThis.Telegram.WebApp;
-let isMainBittonVisible = false;
 tg.ready();
+tg.BackButton.isVisible = true;
 tg.MainButton.text = "Авторизация";
 tg.MainButton.onClick(function(){
     tg.showPopup({
